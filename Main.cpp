@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     int opcao;
-    float base, haltura, basemenor, basemaior, area;
+    float base, altura, basemenor, basemaior, area;
 
     cout << "--- Calculador de Areas ---" << endl;
     cout << "1 - Calcular area de um triangulo" << endl;
@@ -17,12 +17,12 @@ int main() {
         cout << "Digite a base: ";
         cin >> base;
         cout << "Digite a altura: ";
-        cin >> haltura;
+        cin >> altura;
 
-        if (base <= 0 || haltura <= 0) {
+        if (base <= 0 || altura <= 0) {
             cout << "Erro: Valores invalidos!" << endl;
         } else {
-            area = (base * haltura) / 2.0;
+            area = (base * altura) / 2.0;
             cout << "A area do triangulo e: " << area << endl;
         }
     } 
@@ -32,12 +32,12 @@ int main() {
         cout << "Digite a base menor: ";
         cin >> basemenor;
         cout << "Digite a altura: ";
-        cin >> haltura;
+        cin >> altura;
 
-        if (basemaior <= 0 || basemenor <= 0 || haltura <= 0) {
+        if (basemaior <= 0 || basemenor <= 0 || altura <= 0) {
             cout << "Erro: Valores invalidos!" << endl;
         } else {
-            area = ((basemaior + basemenor) * haltura) / 2.0;
+            area = ((basemaior + basemenor) * altura) / 2.0;
             cout << "A area do trapezio e: " << area << endl;
         }
     } 
